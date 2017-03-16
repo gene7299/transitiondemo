@@ -1,0 +1,1 @@
+var pagejson = '{"media":[{"id":1,"x":"0.00","y":"0.00","width":"100.00","height":"100.00","isfix":true,"zindex":"1","appearance":{},"type":["video"],"data":[{"elements":["media/9b12f495-f967-4cc1-bcd3-2409725cf076.mp4"]},{"elements":["media/54382854-b7d6-482a-9e38-7d60b2c31612.mp4"]}]}]}';
