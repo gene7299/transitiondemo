@@ -1,0 +1,40 @@
+<?xml version="1.0"?>
+<layout schemaVersion="1" width="800" height="450" bgcolor="#000000" background="16.jpg"><region id="52930b15263a5" userId="1" width="381" height="39" top="25" left="54"><media id="17" type="image" duration="10" lkid="19" userId="1" schemaVersion="1">
+                            <options><uri>17.png</uri></options>
+                            <raw/>
+                    </media></region><region id="52930b9feabb4" userId="1" width="652" height="37" top="383" left="94"><media id="f9c6761ef9ea004b541fef90138f788b" type="text" duration="1000" lkid="" userId="1" schemaVersion="1">
+                            <options><direction>left</direction><scrollSpeed>2</scrollSpeed><fitText>1</fitText></options>
+                            <raw><text><![CDATA[<p>
+	<span style="font-size:14px;"><span style="color:#006400;">▲台東甜柿亮麗上市 假日採果去 2013年10月23日 上午 09:51 ▲陸新快報記者被捕 報館促放人 2013年10月23日 上午 09:49 ▲綠建議李翔宙接印尼代表 嚴明:建議很好 2013年10月23日 上午 09:49 ▲新iPad到 專家：將掀換機潮 2013年10月23日 上午 09:47 </span></span></p>
+]]></text></raw>
+                    </media></region><region id="5293198346a05" userId="1" width="277" height="333" top="25" left="470"><media id="18" type="image" duration="10" lkid="20" userId="1" schemaVersion="1">
+                            <options><uri>18.jpg</uri></options>
+                            <raw/>
+                    </media><media id="19" type="image" duration="10" lkid="21" userId="1" schemaVersion="1">
+                            <options><uri>19.jpg</uri></options>
+                            <raw/>
+                    </media><media id="20" type="image" duration="10" lkid="22" userId="1" schemaVersion="1">
+                            <options><uri>20.jpg</uri></options>
+                            <raw/>
+                    </media><media id="21" type="image" duration="10" lkid="23" userId="1" schemaVersion="1">
+                            <options><uri>21.jpg</uri></options>
+                            <raw/>
+                    </media><media id="22" type="image" duration="10" lkid="24" userId="1" schemaVersion="1">
+                            <options><uri>22.jpg</uri></options>
+                            <raw/>
+                    </media><media id="23" type="image" duration="10" lkid="25" userId="1" schemaVersion="1">
+                            <options><uri>23.jpg</uri></options>
+                            <raw/>
+                    </media></region><region id="52932ab108417" userId="1" width="385" height="226" top="112" left="50"><media id="24" type="image" duration="5" lkid="26" userId="1" schemaVersion="1">
+                            <options><uri>24.jpg</uri></options>
+                            <raw/>
+                    </media><media id="27" type="video" duration="32" lkid="29" userId="1" schemaVersion="1">
+                            <options><uri>27.mp4</uri></options>
+                            <raw/>
+                    </media><media id="28" type="image" duration="5" lkid="31" userId="1" schemaVersion="1">
+                            <options><uri>28.jpg</uri></options>
+                            <raw/>
+                    </media><media id="26" type="video" duration="43" lkid="30" userId="1" schemaVersion="1">
+                            <options><uri>26.mp4</uri></options>
+                            <raw/>
+                    </media></region></layout>
