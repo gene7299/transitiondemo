@@ -1,0 +1,47 @@
+﻿/*
+body {
+	margin: 0 auto; overflow: hidden;
+	left:0px;
+	top:0px;
+}
+.clock { 
+	padding:0px; 
+	border-width:0px; 
+	left:0px; 
+	top:0px;
+}
+.digiclock {  
+	position: relative;
+}
+.digiclock span { 
+	font-family:'Microsoft JhengHei','Microsoft YaHei','Noto Sans T Chinese','Helvetica Neue', 'Helvetica' ,Arial, Helvetica, sans-serif;
+}
+.addshadow
+{
+	text-shadow:0 0 5px #00c6ff;
+}
+.hide{
+	display: none;
+}
+
+*/
+.digiclock_wrapper{
+	white-space:nowrap !important;
+}
+.digiclock_init{
+	opacity: 0;
+}
+.digiclock_point { 
+	position:relative; 
+	/*
+	padding-left:4px; 
+	padding-right:4px; 
+	*/
+} 
+.digiclock_pointshow {
+	color:rgba(255,255,255);
+} 
+.digiclock_pointhide {
+	color:rgba(255,255,255,0);
+}
+
