@@ -90,7 +90,7 @@ $(document).ready(function () {
 	}
 	if(navigator.userAgent.match(/Android/i) || navigator.userAgent.match(/android/i))
 	{
-		isRunningOnAndroid = true;
+		isRunningOnAndroid = false;
 		console.log('SmartCMS content running on Android !!');
 	}
 	if(getParameterFromURL(document.location.href,'mode') == 'Android' || getParameterFromURL(document.location.href,'mode') == 'android')
