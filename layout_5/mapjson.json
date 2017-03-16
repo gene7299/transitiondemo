@@ -1,0 +1,246 @@
+{
+  "L011C": {
+    "LineName": "1号线",
+    "LineName_EN": "Line 1",
+    "AliasName": "1号线",
+    "AliasName_EN": "Line 1",
+    "LineColor": "#FF0000",
+    "Stations": [
+      {
+        "StationCode": "01",
+        "StationName": "莘庄",
+        "StationName_EN": "Xinzhuang",
+        "Transfer": [
+          {
+            "TransferLine": "5",
+            "TransferColor": "#823094"
+
+          }
+        ]
+      },
+      {
+        "StationCode": "02",
+        "StationName": "外环路",
+        "StationName_EN": "Waihuan Lu"
+      },
+      {
+        "StationCode": "03",
+        "StationName": "莲花路",
+        "StationName_EN": "Lianhua Road"
+      },
+      {
+        "StationCode": "04",
+        "StationName": "锦江乐园",
+        "StationName_EN": "Jinjiang Park"
+      },
+      {
+        "StationCode": "05",
+        "StationName": "上海南站",
+        "StationName_EN": "Shanghai South Railway Station",
+        "Transfer": [
+          {
+            "TransferLine": "3",
+            "TransferColor": "#FFD823"
+
+          }
+        ]
+      },
+      {
+        "StationCode": "06",
+        "StationName": "漕宝路",
+        "StationName_EN": "Caobao Road",
+        "Transfer": [
+          {
+            "TransferLine": "12",
+            "TransferColor": "#007A61"
+
+          }
+        ]
+      },
+      {
+        "StationCode": "07",
+        "StationName": "上海体育馆",
+        "StationName_EN": "Shanghai Indoor Stadium",
+        "Transfer": [
+          {
+            "TransferLine": "4",
+            "TransferColor": "#5F259F"
+
+          }
+        ]
+      },
+      {
+        "StationCode": "08",
+        "StationName": "徐家汇",
+        "StationName_EN": "Xujiahui",
+        "Transfer": [
+          {
+            "TransferLine": "9",
+            "TransferColor": "#91C5DB"
+
+          },
+          {
+            "TransferLine": "11",
+            "TransferColor": "#8C2222"
+
+          }
+        ]
+      },
+      {
+        "StationCode": "09",
+        "StationName": "衡山路",
+        "StationName_EN": "Hengshan Road"
+      },
+      {
+        "StationCode": "0A",
+        "StationName": "常熟路",
+        "StationName_EN": "Changshu Road",
+        "Transfer": [
+          {
+            "TransferLine": "7",
+            "TransferColor": "#F3560F"
+
+          }
+        ]
+      },
+      {
+        "StationCode": "0B",
+        "StationName": "陕西南路",
+        "StationName_EN": "South Shaanxi Road",
+        "Transfer": [
+          {
+            "TransferLine": "10",
+            "TransferColor": "#C7AFD3"
+
+          },
+          {
+            "TransferLine": "12",
+            "TransferColor": "#007A61"
+
+          }
+        ]
+      },
+      {
+        "StationCode": "0C",
+        "StationName": "黄陂南路",
+        "StationName_EN": "South Huangpi Road"
+      },
+      {
+        "StationCode": "0D",
+        "StationName": "人民广场",
+        "StationName_EN": "People's Square",
+        "Transfer": [
+          {
+            "TransferLine": "2",
+            "TransferColor": "#36B854"
+
+          },
+          {
+            "TransferLine": "8",
+            "TransferColor": "#008CC1"
+
+          }
+        ]
+      },
+      {
+        "StationCode": "0E",
+        "StationName": "新闸路",
+        "StationName_EN": "Xinzha Road"
+      },
+      {
+        "StationCode": "0F",
+        "StationName": "汉中路",
+        "StationName_EN": "Hanzhong Road Station",
+        "Transfer": [
+          {
+            "TransferLine": "12",
+            "TransferColor": "#007A61"
+
+          },
+          {
+            "TransferLine": "13",
+            "TransferColor": "#EC91CC"
+
+          }
+        ]
+      },
+      {
+        "StationCode": "10",
+        "StationName": "上海火车站",
+        "StationName_EN": "Shanghai Railway Station",
+        "Transfer": [
+          {
+            "TransferLine": "3",
+            "TransferColor": "#FFD823"
+
+          },
+          {
+            "TransferLine": "4",
+            "TransferColor": "#320176"
+
+          }
+        ]
+      },
+      {
+        "StationCode": "11",
+        "StationName": "中山北路",
+        "StationName_EN": "North Zhongshan Road"
+      },
+      {
+        "StationCode": "12",
+        "StationName": "延长路",
+        "StationName_EN": "Yanchang Road"
+      },
+      {
+        "StationCode": "13",
+        "StationName": "上海马戏城",
+        "StationName_EN": "Shanghai Circus World"
+      },
+      {
+        "StationCode": "14",
+        "StationName": "汶水路",
+        "StationName_EN": "Wenshui Road"
+      },
+      {
+        "StationCode": "15",
+        "StationName": "彭浦新村",
+        "StationName_EN": "Pengpu Xincun"
+      },
+      {
+        "StationCode": "16",
+        "StationName": "共康路",
+        "StationName_EN": "Gongkang Road"
+      },
+      {
+        "StationCode": "17",
+        "StationName": "通河新村",
+        "StationName_EN": "Tonghe Xincun"
+      },
+      {
+        "StationCode": "18",
+        "StationName": "呼兰路",
+        "StationName_EN": "Hulan Road"
+      },
+      {
+        "StationCode": "19",
+        "StationName": "共富新村",
+        "StationName_EN": "Gongfu Xincun"
+      },
+      {
+        "StationCode": "1A",
+        "StationName": "宝安公路",
+        "StationName_EN": "Bao'an Highway"
+      },
+      {
+        "StationCode": "1B",
+        "StationName": "友谊西路",
+        "StationName_EN": "West Youyi Road"
+      },
+      {
+        "StationCode": "1C",
+        "StationName": "富锦路",
+        "StationName_EN": "Fujin Road"
+      }
+    ]
+  }
+}
