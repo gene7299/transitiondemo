@@ -1,0 +1,89 @@
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en" dir="ltr" manifest="saveappoffline.appcache">
+<head>
+	<title>Preview X</title>
+	<meta charset="utf-8">
+	<meta http-equiv='cache-control' content='no-cache'>
+	<meta http-equiv='expires' content='0'>
+	<script type="text/javascript" src="js/std/jquery-1.11.2.min.js"></script>
+	<script type="text/javascript" src="pagejson.js"></script>
+	<style>
+		body{
+			top:0px;
+			left:0px;
+			margin:0px;
+		}
+	</style>
+	<meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0">
+	<!-- Template Setting -->
+	<script>
+
+	$(document).ready(function () {
+
+			var jobj = jQuery.parseJSON(pagejson);
+
+			if(jobj.portrait!=undefined)
+			{
+				gPortraitDegree = parseInt(jobj.portrait);
+			}else
+			{
+				gPortraitDegree = 0;
+			}
+			console.log("Degree="+gPortraitDegree);
+
+			var selfinnerWidthNow = 0;
+			var selfinnerHeightNow = 0;
+			var previewHeight = 0;
+			var previewWidth = 0;
+			if( typeof( self.innerHeight ) == 'number' )
+			{
+				selfinnerHeightNow = self.innerHeight;
+				selfinnerWidthNow = self.innerWidth;
+
+			}else{
+				self.innerHeight = selfinnerHeightNow = document.body.offsetHeight;
+				self.innerWidth = selfinnerWidthNow = document.body.offsetWidth;
+			}	
+			console.log(selfinnerWidthNow+"x"+selfinnerHeightNow);
+
+			if(gPortraitDegree == 90 || gPortraitDegree == 270)
+			{
+				if(selfinnerWidthNow<(selfinnerHeightNow/16*9))
+				{
+					previewWidth = selfinnerWidthNow;
+					previewHeight = selfinnerWidthNow/9*16;	
+				}else
+				{	
+					previewHeight = selfinnerHeightNow;
+					previewWidth = selfinnerHeightNow/16*9;
+				}
+			}else
+			//if(selfinnerWidthNow>selfinnerHeightNow)
+			{
+				if(selfinnerHeightNow<(selfinnerWidthNow/16*9))
+				{
+					previewHeight = selfinnerHeightNow;
+					previewWidth = selfinnerHeightNow/9*16;
+				}else
+				{
+					previewWidth = selfinnerWidthNow;
+					previewHeight = selfinnerWidthNow/16*9;
+				}
+
+			}
+
+			//$('body').css('width',previewWidth);
+			//$('body').css('height',previewHeight);
+			$('#previewiframe').css('width',previewWidth);
+			$('#previewiframe').css('height',previewHeight);
+	});
+
+	</script>
+	<!-- ===================== End of Header ====================== -->
+</head>
+
+<body>	
+<div id="cms">
+<iframe id="previewiframe" src="index.html" frameborder="0"></iframe>
+</div>
+</body>
+</html>

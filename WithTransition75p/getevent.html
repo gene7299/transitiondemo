@@ -1,0 +1,110 @@
+<html>
+ <head>
+    <title>GetEvent X</title>
+    <meta charset="utf-8">
+    <!--<meta name="viewport" content="width=device-width, initial-scale=1.0">-->
+    <meta http-equiv='cache-control' content='no-cache'>
+	<meta http-equiv='expires' content='0'>
+	<meta http-equiv='pragma' content='no-cache'>
+	<style type="text/css">
+		body {
+			zoom:1;
+      background-color: yellow;
+			overflow: hidden;
+		}
+	</style>
+</head>
+<body style="margin: 0px 0px;">
+  <script type="text/javascript" src="js/jquery-1.11.2.min.js"></script>
+  <script>
+  var hardwareKey, serverAddress, serverKey, displayName, secretKey, rootpath;
+  var url = $(location).attr('href');
+  hardwareKey = getURLParameter(url, 'hardwarekey');
+  if (!hardwareKey)
+    hardwareKey = url.substring(url.indexOf("sch_") + 4 ,url.indexOf("/index"));
+  rootpath = getURLParameter(url, 'root');
+  serverAddress = getURLParameter(url, 'serveraddress');
+  if (!serverAddress)
+    serverAddress = window.location.hostname;
+  var HttpProtocol = "http://";
+  var NowER = {
+      id : '',
+      url : '',
+  };
+  var LastER = {
+      id : '',
+      url : '',
+  };
+  var testER = false;
+
+  function getURLParameter(url, name) {
+    return (RegExp(name + '=' + '(.+?)(&|$)').exec(url)||[,null])[1];
+  }
+
+  function getEventFromServer(data){
+      console.log("getEventFromServer=")
+      function isEmpty(map) {
+         for(var key in map) {
+            if (map.hasOwnProperty(key)) {
+               return false;
+            }
+         }
+         return true;
+      }
+      if (data['status'] == 'success')
+      {
+        if(isEmpty(data['response'])!=true){
+           testER = true;
+        }else {
+           testER = false;
+        }
+      }else{
+        return "Disconnected";
+      }
+      if(testER == true)
+      {
+        //NowER.id = data['response'].eventid;
+        //NowER.url = HttpProtocol + serverAddress + data['response'].url;
+        	window.parent.postMessage("getevent.html?eventactive=true&eventid="+data['response'].eventid+"&url="+data['response'].url,'*');
+        return "ERing";
+      }else {
+        	window.parent.postMessage("getevent.html?eventactive=false",'*');
+        return "NotER";
+      }
+  }
+  function startEvent(){
+      console.log("serverAddress="+serverAddress);
+      console.log("groupCode="+hardwareKey);
+      if(serverAddress!="" && serverAddress.length>0)
+      {
+        poll();
+      }
+      function poll() {
+          setTimeout(function() {
+              //ohSnap('poll ' + HttpProtocol+serverAddress+"/event/getevent?groupcode=" + hardwareKey.replace('Group','') , 'blue');
+              $.ajax({
+                  url: HttpProtocol+serverAddress+"/event/getevent?groupcode=" + hardwareKey.replace('Group','')+ "&t=" + ((new Date()).getTime()),
+                  type: "GET",
+                  success: function(data) {
+                      getEventFromServer(data);
+                  },
+                  dataType: "jsonp",
+                  complete: poll,
+                  timeout: 2000,
+                  error: function(){
+                    //ohSnap('error!', 'blue');
+                    console.log("ERROR - Reload " + location.href)
+                    location.href = location.href.substring(0,location.href.indexOf("&t=")) +'&t=' + ((new Date()).getTime());
+                  }
+              })
+          }, 5000);
+      };
+    }
+
+
+  $(document).ready(function () {
+       startEvent();
+  });
+  </script>
+</body>
+</html>

@@ -1,0 +1,1 @@
+SERVER_ADDRESS=127.0.0.1:9989;&##&;SERVER_KEY=server120;&##&;HARDWAREKEY=Group5kd7m1oN4PiZ;&##&;DISPLAYNAME=Group5kd7m1oN4PiZ;&##&;ROOT=CloudCMS/admin/0281;&##&;
